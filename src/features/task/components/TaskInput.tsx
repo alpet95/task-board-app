@@ -97,7 +97,7 @@ const TaskInput: React.FC = () => {
         onChange={inputChangeHandler}
       />
       <button type="submit" className={classes.button}>
-        <img src={plus} className={classes.plus} />
+        <img src={plus} alt="plus" className={classes.plus} />
       </button>
     </form>
   );
