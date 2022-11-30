@@ -1,0 +1,66 @@
+.task {
+  width: 100%;
+  padding: 10px 5px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  border: 2px solid var(--lightgrey-color-2);
+  border-right: none;
+  border-left: none;
+}
+
+.editedTaskForm {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.editedTaskInput {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--grey-color);
+  background-color: var(--lightgrey-color-2);
+}
+
+.controls {
+  width: 100px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.edit {
+  color: var(--blue-color);
+}
+
+.editDisabled {
+  color: var(--grey-color);
+}
+
+.complete {
+  color: var(--orange-color);
+}
+
+.completed {
+  color: var(--green-color);
+}
+
+.remove {
+  color: var(--red-color);
+}

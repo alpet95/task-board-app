@@ -1,0 +1,28 @@
+.container {
+  width: 373px;
+  height: 278px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  list-style: none;
+}
+
+.container::-webkit-scrollbar {
+  width: 7px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: var(--lightgrey-color);
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: var(--blue-color);
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+}

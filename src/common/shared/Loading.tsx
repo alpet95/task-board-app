@@ -5,26 +5,19 @@
 // === REACT & HOOKS -----------------------
 import React from "react";
 
-// === COMPONENTS --------------------------
-import Main from "./components/layout/Main";
-
 // === STYLES ------------------------------
-import classes from "./App.module.css";
+import classes from "./Loading.module.css";
 
 /* =======================================
                   COMPONENT                  
 ========================================== */
 
-const App: React.FC = () => {
-  return (
-    <div className={classes.app}>
-      <Main />
-    </div>
-  );
+const Loading: React.FC = () => {
+  return <div className={classes.spinner}></div>;
 };
 
 /* =======================================
                   EXPORTS                    
 ========================================== */
 
-export default App;
+export default Loading;

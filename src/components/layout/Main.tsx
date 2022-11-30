@@ -6,19 +6,23 @@
 import React from "react";
 
 // === COMPONENTS --------------------------
-import Main from "./components/layout/Main";
+import Header from "./Header";
+import TaskInput from "features/task/components/TaskInput";
+import TaskList from "features/task/components/TaskList";
 
 // === STYLES ------------------------------
-import classes from "./App.module.css";
+import classes from "./Main.module.css";
 
 /* =======================================
                   COMPONENT                  
 ========================================== */
 
-const App: React.FC = () => {
+const Main: React.FC = () => {
   return (
-    <div className={classes.app}>
-      <Main />
+    <div className={classes.main}>
+      <Header />
+      <TaskInput />
+      <TaskList />
     </div>
   );
 };
@@ -27,4 +31,4 @@ const App: React.FC = () => {
                   EXPORTS                    
 ========================================== */
 
-export default App;
+export default Main;

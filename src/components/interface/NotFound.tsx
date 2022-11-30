@@ -5,26 +5,27 @@
 // === REACT & HOOKS -----------------------
 import React from "react";
 
-// === COMPONENTS --------------------------
-import Main from "./components/layout/Main";
+// === ASSETS ------------------------------
+import { HiMagnifyingGlass } from "react-icons/hi2";
 
 // === STYLES ------------------------------
-import classes from "./App.module.css";
+import classes from "./NotFound.module.css";
 
 /* =======================================
                   COMPONENT                  
 ========================================== */
 
-const App: React.FC = () => {
+const NotFound: React.FC = () => {
   return (
-    <div className={classes.app}>
-      <Main />
+    <div className={classes.container}>
+      <HiMagnifyingGlass className={classes.icon} />
+      <p className={classes.message}>You don't have any tasks yet</p>
     </div>
   );
 };
 
 /* =======================================
-                  EXPORTS                    
+                  EXPORTS
 ========================================== */
 
-export default App;
+export default NotFound;
